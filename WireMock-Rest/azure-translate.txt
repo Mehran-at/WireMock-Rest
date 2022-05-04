@@ -1,0 +1,25 @@
+
+
+curl -i -X POST "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=en" \
+     -H "Ocp-Apim-Subscription-Key:xxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+     -H "Ocp-Apim-Subscription-Region:westeurope" \
+     -H "Content-Type: application/json" \
+     -d "[{'Text':'Funfzehn jahre alt'}]"
+
+
+
+Response:
+
+    TP/2 200
+    content-type: application/json; charset=utf-8
+    x-mt-system: Microsoft
+    x-requestid: TRAN.AM4P.0347.0503T1323.287B168
+    access-control-expose-headers: X-RequestId
+    access-control-expose-headers: X-Metered-Usage
+    x-content-type-options: nosniff
+    x-metered-usage: 18
+    strict-transport-security: max-age=31536000; includeSubDomains
+    date: Tue, 03 May 2022 13:23:53 GMT
+    content-length: 108
+
+    [{"detectedLanguage":{"language":"de","score":1.0},"translations":[{"text":"Fifteen years old","to":"en"}]}]
